@@ -3,8 +3,17 @@
     margin: 0;
 }
 
-.body {
-    color: white;
+body {
+    font-family: 'Rambla', sans-serif;
+}
+
+.col-4 {
+    width: 33.3333%;
+    float: left;
+}
+
+.row {
+    clear: both;
 }
 
 .full-page {
@@ -53,7 +62,6 @@
 }
 
 .main-menu {
-    font-family: 'Rambla', sans-serif;
     margin: 45px 0;
 }
 
@@ -98,20 +106,18 @@
 }
 
 .info-span {
-    /*  */
+    display: inline-block;
 }
 
 .info-span h5 {
     font-size: 15px;
     margin-top: 3px;
-    font-family: 'Rambla', sans-serif;
     line-height: 1.5em;
 }
 
 .info-span h6 {
     font-size: 15px;
     font-weight: 400;
-    font-family: 'Rambla', sans-serif;
     line-height: 1.5em;
 }
 
@@ -175,4 +181,96 @@
 .main-page {
     width: 75%;
     float: right;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.banner .description {
+    position: absolute;
+    background-color: white;
+    bottom: 30px;
+    left: 75px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.description h1 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    line-height: 2em;
+}
+
+.description button {
+    font-family: 'Rambla', serif;
+    font-size: 16px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-color: rgb(229, 46, 113);
+    color: white;
+    border: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.description button:hover {
+    background-color: rgb(255, 138, 0);
+}
+
+.heading {
+    color: rgb(229, 46, 113);
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.heading-info {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.services {
+    padding: 50px;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+    clear: both;
+}
+
+.services-box {
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.services-box img {
+    width: 100%;
+    filter: brightness(75%);
+}
+
+.services-box .footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.services-box .footer a {
+    color: white;
+    text-decoration: none;
 }
