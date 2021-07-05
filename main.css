@@ -7,6 +7,15 @@ body {
     font-family: 'Rambla', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
 .col-4 {
     width: 33.3333%;
     float: left;
@@ -17,6 +26,18 @@ body {
 }
 
 .full-page {
+    width: 100%;
+}
+
+.section-divs {
+    padding: 50px;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 30px;
     width: 100%;
 }
 
@@ -33,7 +54,6 @@ body {
 .logo {
     width: 100%;
     text-align: center;
-    font-family: 'Playfair Display', serif;
 }
 
 .logo img {
@@ -100,7 +120,6 @@ body {
 }
 
 .icon {
-    /* width: 40px; */
     height: 40px;
     line-height: 50px;
 }
@@ -202,7 +221,6 @@ body {
 .description h1 {
     font-size: 25px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
     line-height: 2em;
 }
 
@@ -225,52 +243,62 @@ body {
 
 .heading {
     color: rgb(229, 46, 113);
-    font-family: 'Playfair Display', serif;
     font-size: 30px;
 }
 
 .heading-info {
-    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 17px;
 }
 
-.services {
-    padding: 50px;
-    clear: both;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.container {
-    margin-top: 30px;
-    width: 100%;
-    clear: both;
-}
-
 .services-box {
-    padding: 0 15px;
+    padding: 10px 15px;
     box-sizing: border-box;
+}
+
+.subbox {
+    width: 100%;
+    height: 280px;
+    box-sizing: border-box;
+    overflow: hidden;
     position: relative;
 }
 
-.services-box img {
+.subbox img {
     width: 100%;
+    height: 100%;
     filter: brightness(75%);
+    transition: 1s;
+    box-sizing: border-box;
 }
 
-.services-box .footer {
+.subbox .footer {
     width: 100%;
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: -9%;
     left: 0;
-    font-family: 'Playfair Display', serif;
+    transition: 1s;
+    box-sizing: border-box;
 }
 
-.services-box .footer a {
+.subbox .footer a {
     color: white;
     text-decoration: none;
+    font-size: 21px;
+}
+
+.subbox .footer a h4 {
+    margin-bottom: 15px;
+}
+
+.subbox:hover .footer {
+    bottom: 20%;
+}
+
+.subbox:hover img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
